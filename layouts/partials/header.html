@@ -28,7 +28,7 @@
             <div class="navbar-nav ml-auto text-center">
               {{ with .Site.Params.github }}<a class="nav-item nav-link" href="https://github.com/{{ . }}" target="_blank">GitHub</a>{{ end }}
               {{ with .Site.Params.gitlab }}<a class="nav-item nav-link" href="https://gitlab.com/{{ . }}" target="_blank">GitLab</a>{{ end }}
-              <!-- <a class="nav-item nav-link {{ if eq .URL "/"}}active{{ end }}" href="/index.xml">RSS</a> -->
+              <!-- <a class="nav-item nav-link {{ if eq .Permalink "/"}}active{{ end }}" href="/index.xml">RSS</a> -->
               <a class="nav-item nav-link active" rel="alternate" type="application/rss+xml" href="/index.xml">RSS</a>
               <a class="nav-item nav-link active" href="/about/">About</a>
               <a class="nav-item nav-link active" href="/">Home</a>
