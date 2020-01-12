@@ -114,3 +114,7 @@ pre {
     color: black;
     font-style: italic;
 }
+
+.underline {
+    text-decoration: underline;
+}
