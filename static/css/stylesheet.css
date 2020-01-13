@@ -3,6 +3,7 @@ body {
     margin: auto;
     max-width: 55em;
     background-color: floralwhite;
+    font-size: 1.1rem;
 }
 
 #page-title {
@@ -20,7 +21,6 @@ body {
 }
 
 .blog-post-content a {
-    color: black;
     text-decoration: underline;
 }
 
@@ -77,7 +77,7 @@ h6  {
 
 code {
     font-family: 'Inconsolata', monospace;
-    font-size: 1rem;
+    font-size: 1.1rem;
     white-space: pre;
     overflow-x: auto;
 }
