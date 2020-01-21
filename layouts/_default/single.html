@@ -7,6 +7,28 @@
   <div class="blog-post-content">
     {{ .Content }}
   </div>
-  {{ template "_internal/disqus.html" . }}
+
+  <hr>
+
+  <p class="email-comment"  style="text-align: center">
+      <a href="mailto:mail@yiufung.net">Comment via email</a> or via Disqus comments below:
+  </p>
+  <div id="disqus_thread"></div>
+  <div id="disqus_loader" style="text-align: center">
+    <!-- stolen from http://blog.yjl.im/2012/04/let-your-readers-decide-when-to-load.html -->
+    <button onclick="load_disqus()">Load Disqus Comments</button>
+    <script>
+        function load_disqus()
+        {
+          var dsq = document.createElement('script');
+          dsq.type = 'text/javascript';
+          dsq.async = true;
+          dsq.src = "//yiufung.disqus.com/embed.js";
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          var ldr = document.getElementById('disqus_loader');
+          ldr.parentNode.removeChild(ldr);
+        }
+    </script>
+  </div>
 </div>
 {{ end }}
